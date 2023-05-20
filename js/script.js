@@ -38,6 +38,7 @@ function boxClicked(e) {
 
         count_plays++;
         currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT;
+        boxes.forEach((box) => (box.style.color = 'white'));
     }
     if (count_plays === 9) {
         playerText.innerHTML = 'Draw Game!';
